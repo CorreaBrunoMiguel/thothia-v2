@@ -120,3 +120,29 @@
 > como um ecossistema coeso.
 
 ---
+
+### ⚙️ Tarefa 3 — Integração de Middleware e Controle de Erros
+
+> À medida que o sistema começa a interagir com o mundo, torna-se necessário
+> **filtrar, interpretar e reagir com equilíbrio**.
+>
+> Nesta tarefa, a Thothia v2 aprende a lidar com as imperfeições do ambiente:
+> requisições malformadas, rotas inexistentes, falhas inesperadas.
+>
+> Implementaremos os **middlewares essenciais** — camadas intermediárias que
+> processam cada requisição e garantem que o sistema responda de forma segura,
+> previsível e coerente.
+>
+> Essa etapa introduz o **tratamento de erros globais**, definindo padrões de
+> resposta e uma estrutura unificada de logging. Assim, o backend começa a
+> desenvolver algo próximo a uma **homeostase digital**: a capacidade de se
+> ajustar sem colapsar.
+>
+> O código passa a ter resiliência — não apenas executa, mas compreende quando
+> algo deu errado e comunica isso de modo controlado.
+>
+> Ao final desta tarefa, a Thothia v2 possuirá uma camada de proteção essencial,
+> tornando-se um organismo mais estável, pronto para interagir com dados reais e
+> conexões externas.
+
+---
