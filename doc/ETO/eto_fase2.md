@@ -146,3 +146,29 @@
 > conexões externas.
 
 ---
+
+### ⚙️ Tarefa 4 — Configuração de Variáveis e Ambiente Dinâmico
+
+> Até aqui, a Thothia v2 já respira e responde — mas ainda vive em um ambiente
+> estático. Para evoluir, ela precisa **perceber onde está** e adaptar seu
+> comportamento conforme o contexto.
+>
+> Nesta tarefa, introduzimos o conceito de **ambientes dinâmicos**, permitindo
+> que o sistema saiba diferenciar se está em desenvolvimento, teste ou produção.
+>
+> A configuração de variáveis de ambiente é o que concede ao backend
+> **consciência situacional**: a capacidade de ajustar portas, bancos, logs e
+> recursos sem alterar o código.
+>
+> Essa camada torna o sistema flexível, modular e seguro — capaz de mudar de
+> habitat sem comprometer sua integridade.
+>
+> Aqui, estruturaremos o uso de `.env` e `.env.example`, criaremos variáveis
+> para ambiente, banco e modo operacional, e garantiremos que o sistema carregue
+> tudo automaticamente pela `serverConfig.js`.
+>
+> Com isso, a Thothia v2 adquire percepção de contexto, o primeiro passo em
+> direção à **autoadaptação** — um atributo essencial para sistemas vivos e
+> sustentáveis.
+
+---
