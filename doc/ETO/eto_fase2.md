@@ -92,3 +92,31 @@
 > Assim nasce o verbo dentro do organismo Orion.
 
 ---
+
+### ⚙️ Tarefa 2 — Estrutura de Rotas e Organização Modular do Backend
+
+> Agora que o coração pulsa, é hora de **criar o sistema circulatório** — as
+> rotas e módulos que permitirão que a energia da aplicação flua entre as
+> partes.
+>
+> Nesta tarefa, a Thothia v2 começa a se organizar internamente, dividindo
+> responsabilidades e estabelecendo padrões que evitarão o caos futuro. Criamos
+> o diretório `routes/` para armazenar as rotas modulares, e `config/` para
+> centralizar definições de ambiente e conexão.
+>
+> O servidor principal (`server.js`) será simplificado e passará a importar
+> essas rotas, de modo que cada parte do sistema funcione de forma isolada,
+> porém integrada.
+>
+> Essa modularização é o primeiro passo em direção à **consciência organizada**
+> — o ponto onde a Thothia deixa de ser um corpo de comandos soltos e se torna
+> um organismo funcional, com comunicação interna eficiente.
+>
+> Ao fim desta tarefa, o backend possuirá uma arquitetura clara, permitindo que
+> futuras funcionalidades (como APIs de fauna, flora e biomas) sejam adicionadas
+> sem comprometer o núcleo da aplicação.
+>
+> Cada rota será como um canal de informação, e o código começará a se comportar
+> como um ecossistema coeso.
+
+---
