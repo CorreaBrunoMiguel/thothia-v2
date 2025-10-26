@@ -39,7 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/CorreaBrunoMiguel/thothia-v2.git"
   },
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/CorreaBrunoMiguel/thothia-v2/issues"
   },
