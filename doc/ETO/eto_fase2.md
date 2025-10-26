@@ -226,3 +226,35 @@
 > ecológicas complexas nas próximas fases.
 
 ---
+
+### ⚙️ Tarefa 2 — Estrutura de Modelos e Entidades do Banco (Flora, Fauna e Biomas)
+
+> A Thothia agora se lembra — mas ainda não sabe **o que lembrar**.
+>
+> Nesta tarefa, daremos forma à sua memória, definindo as **entidades
+> fundamentais** que representarão o mundo natural dentro do sistema.
+>
+> As tabelas de **Flora**, **Fauna** e **Biomas** formam o núcleo ontológico da
+> Thothia v2: são a tradução técnica da biodiversidade, transformando o real em
+> estrutura relacional.
+>
+> Cada entidade refletirá um aspecto essencial do ecossistema:
+>
+> - **Flora:** espécies vegetais, nomes científicos, status ecológico, bioma de
+>   ocorrência.
+> - **Fauna:** espécies animais, classificação, status e interações ecológicas.
+> - **Biomas:** macroambientes que servem de habitat e contexto às demais
+>   entidades.
+>
+> Essa tarefa não apenas cria as tabelas — ela define a forma como o sistema
+> **compreende e relaciona a natureza**.
+>
+> É aqui que o projeto deixa de ser um simples catálogo e começa a se comportar
+> como um **organismo de conhecimento**, onde cada dado possui vida, relação e
+> significado.
+>
+> Ao final desta tarefa, o banco da Thothia possuirá as estruturas mínimas para
+> abrigar a biodiversidade local, prontas para serem populadas e consultadas
+> pelas camadas superiores do sistema.
+
+---
