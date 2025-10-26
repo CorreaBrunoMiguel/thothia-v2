@@ -1,0 +1,35 @@
+{
+  "name": "thothia-v2",
+  "version": "2.0.0",
+  "description": "Catálogo técnico e interativo de flora e fauna, baseado em Node.js + React (Orion Protocol).",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "dev": "node src/backend/server.js",
+    "start": "node src/backend/server.js",
+    "frontend": "vite --config src/frontend/vite.config.js",
+    "backend": "nodemon src/backend/server.js",
+    "setup": "npm install && echo '✅ Ambiente Thothia v2 configurado.'"
+  },
+  "keywords": [
+    "biodiversity",
+    "ecology",
+    "orion-protocol",
+    "node",
+    "react",
+    "catalog",
+    "flora",
+    "fauna"
+  ],
+  "author": "Bruno (Orion System)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "vite": "^5.1.0"
+  }
+}
