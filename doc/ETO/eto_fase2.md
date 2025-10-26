@@ -172,3 +172,57 @@
 > sustentáveis.
 
 ---
+
+## 🧩 Sprint 2 — Integração com Banco de Dados (PostgreSQL)
+
+> Se na primeira sprint o sistema aprendeu a respirar e se organizar, agora ele
+> aprende a **lembrar**.
+>
+> O propósito desta sprint é conceder à Thothia v2 uma **memória funcional**,
+> através da integração com o **banco de dados PostgreSQL**, que atuará como
+> substrato informacional da vida do sistema.
+>
+> A partir deste ponto, o backend deixa de ser apenas um fluxo de requisições e
+> respostas e passa a ser um organismo que **armazena experiências** — capaz de
+> registrar espécies, biomas, status ecológicos e relações complexas.
+>
+> Aqui, serão configuradas as camadas fundamentais da persistência de dados:
+>
+> - Conexão com o PostgreSQL via `pg`.
+> - Criação do módulo `database/connection.js`.
+> - Teste de conectividade e tratamento de falhas.
+> - Estrutura base para futuras entidades (fauna, flora, etc.).
+>
+> Essa sprint marca o início da **consciência histórica** da Thothia — a
+> capacidade de reter, consultar e evoluir com base em dados próprios.
+>
+> Ao final desta etapa, o sistema possuirá um canal de comunicação estável com o
+> banco, preparado para as futuras fases de modelagem e expansão cognitiva.
+
+---
+
+### ⚙️ Tarefa 1 — Configuração da Conexão com o Banco e Teste de Comunicação
+
+> A memória é o primeiro passo da inteligência. Sem ela, não há aprendizado —
+> apenas repetição.
+>
+> Nesta tarefa, a Thothia v2 estabelece o elo entre sua mente lógica e sua
+> memória biológica: a conexão com o **PostgreSQL**, o repositório onde o
+> conhecimento sobre o mundo natural será preservado.
+>
+> Criamos o módulo `database/connection.js`, responsável por inicializar e
+> monitorar o vínculo com o banco, garantindo que o sistema saiba detectar,
+> reconectar e relatar eventuais falhas.
+>
+> A integração será feita usando o pacote `pg`, configurando variáveis de
+> ambiente seguras (`DATABASE_URL`) e testes de conectividade.
+>
+> Essa etapa concede à Thothia a capacidade de **persistir conhecimento** — de
+> lembrar as espécies, registrar biomas e compreender o ambiente que ela
+> cataloga.
+>
+> Ao final desta tarefa, a aplicação estará conectada a um banco PostgreSQL
+> local, pronta para criar tabelas, inserir dados e construir relações
+> ecológicas complexas nas próximas fases.
+
+---
