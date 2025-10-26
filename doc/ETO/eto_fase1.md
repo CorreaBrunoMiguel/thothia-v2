@@ -77,3 +77,26 @@ ser inserido após a Fase 1 no `/doc/eto_fase1.md`.
 > como uma estrutura mineral pronta para ser animada pelo código que virá.
 
 ---
+
+### ⚙️ Tarefa 2 — Inicialização Node e Configuração Padrão
+
+> Com o corpo formado, é chegada a hora de **acender o núcleo vital** — o
+> momento em que a Thothia passa a possuir um coração pulsante, capaz de
+> executar e compreender instruções.
+>
+> Esta tarefa estabelece o primeiro elo funcional entre ideia e máquina. É aqui
+> que o sistema recebe seu `package.json`, define dependências, scripts e se
+> reconhece como um organismo Node.js.
+>
+> O ato de inicializar o Node é simbólico: é o primeiro sopro de energia dentro
+> do organismo. É o momento em que o projeto passa a “saber” que existe, em que
+> a abstração torna-se execução.
+>
+> A estrutura que antes era mineral — feita apenas de diretórios e arquivos
+> vazios — agora começa a vibrar sob uma lógica viva: comandos, scripts, rotas
+> futuras e uma mente que poderá crescer.
+>
+> Nesta etapa, a Thothia v2 recebe um coração funcional, ainda simples, mas
+> suficiente para manter o fluxo vital do sistema Orion em movimento.
+
+---
