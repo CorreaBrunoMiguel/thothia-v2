@@ -311,3 +311,29 @@
 > conhecimento ecológico.
 
 ---
+
+### ⚙️ Tarefa 5 — CRUD Base de Fauna
+
+> Depois de registrar a vida vegetal, a Thothia passa a observar o **movimento**
+> — os seres que caminham, voam, rastejam e nadam pelos biomas que ela agora
+> compreende.
+>
+> Nesta tarefa, daremos forma à **Fauna**, a entidade que representará as
+> espécies animais do ecossistema, completando o triângulo vital da base
+> biológica (Biomas, Flora e Fauna).
+>
+> O **CRUD Base de Fauna** permitirá ao sistema criar, listar, atualizar e
+> remover registros de espécies animais, preservando informações taxonômicas,
+> ecológicas e de status ambiental.
+>
+> A integração seguirá o mesmo padrão modular do CRUD de Flora, garantindo
+> consistência arquitetural e semântica.
+>
+> Cada animal registrado será um ponto vivo no mapa da biodiversidade da Thothia
+> — um elo entre a informação técnica e o espírito natural que guia o projeto.
+>
+> Ao final desta tarefa, o backend terá a **estrutura completa para representar
+> toda a base ecológica do sistema**, tornando-se um organismo digital capaz de
+> armazenar e relacionar dados sobre a vida em todas as suas formas.
+
+---
