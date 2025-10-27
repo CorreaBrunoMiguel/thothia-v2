@@ -285,3 +285,29 @@
 > da camada ativa de dados da Thothia v2.
 
 ---
+
+### ⚙️ Tarefa 4 — CRUD Base de Flora
+
+> A Thothia começa agora a observar a vegetação que a cerca. Depois de entender
+> os biomas que sustentam a vida, ela precisa **registrar e compreender as
+> formas vegetais** que habitam esses ecossistemas.
+>
+> Nesta tarefa, será implementado o **CRUD Base de Flora**, responsável por
+> criar, listar, atualizar e remover espécies vegetais.
+>
+> Cada registro representará uma planta dentro de um bioma, contendo informações
+> científicas, nomes populares e status ecológico.
+>
+> Esta camada é mais do que um simples cadastro — é a primeira instância de
+> **vida registrada** no sistema, um passo essencial para o sonho da catalogação
+> viva da Thothia v2.
+>
+> A integração seguirá os mesmos princípios modulares do CRUD de Biomas,
+> mantendo consistência, simplicidade e clareza de comunicação entre os módulos.
+>
+> Ao final desta tarefa, a Thothia possuirá o **módulo de Flora totalmente
+> funcional**, capaz de armazenar e gerenciar informações botânicas de forma
+> independente e escalável — consolidando o backend como uma verdadeira base de
+> conhecimento ecológico.
+
+---
