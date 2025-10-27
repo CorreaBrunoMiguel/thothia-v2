@@ -258,3 +258,30 @@
 > pelas camadas superiores do sistema.
 
 ---
+
+### ⚙️ Tarefa 3 — CRUD Base de Biomas
+
+> Agora que as estruturas fundamentais estão erigidas, é hora de conceder
+> movimento a esses dados — de permitir **interação e transformação**.
+>
+> Nesta tarefa, implementaremos o **CRUD Base de Biomas** (Create, Read, Update,
+> Delete), a primeira manifestação prática da persistência viva da Thothia v2.
+>
+> Essa funcionalidade permitirá que o sistema crie, liste, atualize e remova
+> registros de biomas, fornecendo o alicerce para as relações ecológicas que
+> virão em seguida (flora e fauna).
+>
+> Cada operação do CRUD será uma forma de manipular a “geografia interna” da
+> Thothia, onde cada bioma é um ecossistema conceitual pronto para receber
+> espécies e dados ambientais.
+>
+> Ao implementar esse CRUD, a aplicação passa a ser **autônoma na manipulação de
+> seu próprio conhecimento ambiental**, tornando-se um verdadeiro **sistema
+> biológico digital** — capaz de criar, evoluir e regenerar sua base de
+> informação.
+>
+> Ao final desta tarefa, teremos endpoints REST funcionais para gerenciar
+> biomas, integrados ao PostgreSQL, testados e documentados, marcando o início
+> da camada ativa de dados da Thothia v2.
+
+---
