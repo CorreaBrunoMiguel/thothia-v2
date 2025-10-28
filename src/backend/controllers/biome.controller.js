@@ -1,65 +1,59 @@
-import pool from '../database/connection.js';
+import {
+  getAllBiomes,
+  getBiomeById,
+  createBiome,
+  updateBiome,
+  deleteBiome,
+} from '../services/biome.service.js';
+import { successResponse, errorResponse } from '../services/responseHandler.js';
 
-export const getAllBiomes = async (req, res, next) => {
+export const listBiomes = async (_, res) => {
   try {
-    const { rows } = await pool.query('SELECT * FROM biomes ORDER BY id ASC');
-    res.json(rows);
+    const biomes = await getAllBiomes();
+    successResponse(res, biomes, 'Biomas recuperados com sucesso');
   } catch (error) {
-    next(error);
+    errorResponse(res, error, 500);
   }
 };
 
-export const getBiomesById = async (req, res, next) => {
+export const getBiome = async (req, res) => {
+  try {
+    const biome = await getBiomeById(req.params.id);
+    !biome
+      ? errorResponse(res, 'Bioma não encontrado', 404)
+      : successResponse(res, biome, 'Bioma recuperado com sucesso');
+  } catch (error) {
+    errorResponse(res, error, 500);
+  }
+};
+
+export const create = async (req, res) => {
+  try {
+    const biomeData = req.body;
+    const biome = await createBiome(biomeData);
+    successResponse(res, biome, 'Bioma criado com sucesso');
+  } catch (error) {
+    errorResponse(res, error, 500);
+  }
+};
+
+export const update = async (req, res) => {
   try {
     const { id } = req.params;
-    const { rows } = await pool.query('SELECT * FROM biomes WHERE id = $1', [
-      id,
-    ]);
-    if (rows.length === 0)
-      return res.status(404).json({ error: 'Bioma não encontrado' });
-    res.json(rows[0]);
-  } catch (error) {
-    next(error);
-  }
-};
-
-export const createBiome = async (req, res, next) => {
-  try {
-    const { name, description, region } = req.body;
-    const { rows } = await pool.query(
-      'INSERT INTO biomes (name, description, region) VALUES ($1, $2, $3) RETURNING *',
-      [name, description, region]
-    );
-    res.status(201).json(rows[0]);
-  } catch (error) {
-    next(error);
-  }
-};
-
-export const updateBiome = async (req, res, next) => {
-  try {
-    const { id } = req.params;
-    const { name, description, region } = req.body;
-    const { rows } = await pool.query(
-      'UPDATE biomes SET name=$1, description=$2, region=$3 WHERE id=$4 RETURNING *',
-      [name, description, region, id]
-    );
-    if (rows.length === 0)
-      return res.status(404).json({ error: 'Bioma não encontrado' });
-    res.json(rows[0]);
+    const biomeData = req.body;
+    const biome = await updateBiome(id, biomeData);
+    successResponse(res, biome, 'Bioma atualizado com sucesso');
   } catch (err) {
-    next(err);
+    errorResponse(res, err, 500);
   }
 };
 
-export const deleteBiome = async (req, res, next) => {
+export const del = async (req, res) => {
   try {
     const { id } = req.params;
-    const result = await pool.query('DELETE FROM biomes WHERE id = $1', [id]);
-    if (result.rowCount === 0)
-      return res.status(404).json({ error: 'Bioma não encontrado' });
-    res.status(204).send();
+    await deleteBiome(id);
+    successResponse(res, null, 'Bioma deletado com sucesso');
   } catch (err) {
-    next(err);
+    errorResponse(res, err, 500);
   }
 };

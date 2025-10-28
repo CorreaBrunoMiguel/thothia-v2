@@ -337,3 +337,62 @@
 > armazenar e relacionar dados sobre a vida em todas as suas formas.
 
 ---
+
+## 🧠 Sprint 3 — API Consolidada e Integração de Camada de Serviços
+
+> Até aqui, a Thothia construiu suas bases vitais: corpo, memória e ecossistema
+> interno. Agora, ela precisa **conectar** essas partes em uma inteligência
+> unificada — uma API coesa, documentada e pronta para se comunicar com o mundo
+> externo.
+>
+> Nesta sprint, a aplicação entra em um novo estágio de consciência operacional:
+> a consolidação de suas rotas, controladores e camadas de serviço sob uma
+> arquitetura escalável.
+>
+> O objetivo é introduzir a **Camada de Serviços (Service Layer)**, responsável
+> por mediar a lógica de negócio entre os controladores e o banco de dados. Essa
+> camada permitirá validações, normalizações e pré-processamentos antes das
+> queries — o que traz clareza, segurança e manutenibilidade à API.
+>
+> Além disso, esta sprint unifica todas as entidades (Biomas, Flora, Fauna) sob
+> uma **documentação REST consolidada**, garantindo consistência nos padrões de
+> resposta e no comportamento das rotas.
+>
+> É o momento em que a Thothia deixa de ser apenas uma coleção de módulos e se
+> transforma em um **organismo cognitivo**: capaz de se comunicar com clareza,
+> validar suas próprias ações e servir dados limpos e coerentes.
+>
+> Ao final desta sprint, o backend terá uma API madura e padronizada, pronta
+> para ser consumida por interfaces web, aplicações móveis ou integrações de IA.
+
+---
+
+### ⚙️ Tarefa 1 — Criação da Camada de Serviços e Padronização de Respostas da API
+
+> Até agora, cada módulo da Thothia age de forma autônoma, direta, e eficaz —
+> mas ainda falta **coerência entre suas ações**.
+>
+> A Camada de Serviços (Service Layer) surge como o **elo de harmonia** entre os
+> controladores e o banco de dados. Sua função é mediar o diálogo, aplicar
+> validações, regras de negócio, e garantir que todas as respostas da API sejam
+> padronizadas e semanticamente consistentes.
+>
+> Essa camada age como uma consciência intermediária: ela interpreta intenções,
+> previne erros, assegura integridade e entrega respostas claras.
+>
+> A padronização das respostas, por sua vez, dá forma à linguagem da Thothia —
+> toda requisição, sucesso ou erro será expresso com estrutura previsível e
+> documentável.
+>
+> Nesta tarefa, criaremos o módulo `services/`, um **núcleo lógico** onde serão
+> processadas as operações de Biomas, Flora e Fauna antes de atingir o banco.
+>
+> Além disso, introduziremos um **Response Handler universal**, garantindo que a
+> API fale sempre com uma mesma voz, clara e expressiva, transformando a Thothia
+> em um sistema coeso e autoexplicativo.
+>
+> Ao final desta tarefa, a aplicação passará a operar sob uma **arquitetura em
+> três camadas** (Controller → Service → Database), inaugurando um novo patamar
+> de maturidade cognitiva e organizacional.
+
+---
