@@ -396,3 +396,30 @@
 > de maturidade cognitiva e organizacional.
 
 ---
+
+### ⚙️ Tarefa 2 — Middleware de Validação e Tratamento de Erros Avançado _(Resumo copiável)_
+
+> À medida que a API ganha voz e alcance, cresce também a necessidade de
+> **disciplina no diálogo**. Esta tarefa introduz uma camada de **validação
+> explícita** — um filtro consciente que garante que apenas dados íntegros
+> atravessem o sistema — e eleva o **tratamento de erros** a um nível semântico,
+> padronizado e auditável.
+>
+> Criaremos um **middleware de validação** capaz de inspecionar `params`,
+> `query` e `body`, retornando respostas consistentes quando regras forem
+> violadas. A validação residirá próxima à **Service Layer**, preservando
+> controladores enxutos e garantindo coesão entre intenção e execução.
+>
+> Em paralelo, estenderemos o **error handler** para suportar **códigos,
+> categorias e correlações** (p. ex., `VALIDATION_ERROR`, `NOT_FOUND`,
+> `CONFLICT`, `INTERNAL_ERROR`), permitindo observabilidade e rastreio de
+> incidentes sem ruído. Cada falha deixa de ser uma exceção anônima e passa a
+> ser um **evento interpretável**.
+>
+> O resultado é uma API que comunica com clareza: quando aceita, **confirma**;
+> quando recusa, **explica** — sempre no mesmo formato e com metadados
+> suficientes para instrumentação futura (logs, métricas, APM).
+>
+> Ao concluir esta tarefa, a Thothia v2 operará com **higiene de entrada** e
+> **erros inteligíveis**, pronta para escalar com segurança, reduzir ambiguidade
+> e acelerar o diagnóstico de problemas no ciclo de desenvolvimento.
