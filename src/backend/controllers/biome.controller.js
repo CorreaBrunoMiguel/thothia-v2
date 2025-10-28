@@ -12,7 +12,7 @@ export const listBiomes = async (_, res) => {
     const biomes = await getAllBiomes();
     successResponse(res, biomes, 'Biomas recuperados com sucesso');
   } catch (error) {
-    errorResponse(res, error, 500);
+    errorResponse(res, error, error.status || 500);
   }
 };
 
