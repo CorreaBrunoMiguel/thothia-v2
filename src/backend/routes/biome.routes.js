@@ -1,19 +1,19 @@
 import express from 'express';
 
 import {
-  getAllBiomes,
-  getBiomesById,
-  createBiome,
-  updateBiome,
-  deleteBiome,
+  listBiomes,
+  getBiome,
+  create,
+  update,
+  del,
 } from '../controllers/biome.controller.js';
 
 const router = express.Router();
 
-router.get('/', getAllBiomes);
-router.get('/:id', getBiomesById);
-router.post('/', createBiome);
-router.put('/:id', updateBiome);
-router.delete('/:id', deleteBiome);
+router.get('/', listBiomes);
+router.get('/:id', getBiome);
+router.post('/', create);
+router.put('/:id', update);
+router.delete('/:id', del);
 
 export default router;
