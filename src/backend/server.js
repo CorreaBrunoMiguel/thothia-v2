@@ -1,29 +1,20 @@
+// src/backend/server.js
 import express from 'express';
-
-import { CONFIG } from './config/serverConfig.js';
-
+import cors from 'cors';
 import router from './routes/index.js';
-import pool from './database/connection.js';
-import { notFoundHandler } from './middlewares/notFoundHandler.js';
 import { errorHandler } from './middlewares/errorHandler.js';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './config/swaggerConfig.js';
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
-app.use('/', router);
 
-app.use(notFoundHandler);
+app.use('/', router);
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(errorHandler);
 
-app.listen(CONFIG.port, async () => {
-  console.log(
-    `🌿 Thothia v2 backend running on port ${CONFIG.port} [${CONFIG.env}]`
-  );
-
-  try {
-    await pool.query('SELECT NOW()');
-    console.log('🧩 Database connection test passed ✅');
-  } catch (error) {
-    console.error('⚠️ Database connection failed:', error.message);
-  }
-});
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () =>
+  console.log(`🌍 Thothia API rodando em http://localhost:${PORT}`)
+);
